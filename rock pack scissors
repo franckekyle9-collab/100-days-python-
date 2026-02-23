@@ -1,0 +1,31 @@
+generate_game():
+    game = ["rock", "paper", "scissors"]
+    return game
+
+user_input = input("welcome to rock, paper, scissors! please enter your choice:" )
+choice = generate_game()
+choice = ("rock", "paper", "scissors")
+import random
+computer_choice = random.choice(choice)
+choice_1 = "rock"
+choice_2 = "paper"
+choice_3 = "scissors"
+
+if user_input == choice_1 and computer_choice == choice_3:
+    print("you win! rock beats scissors")
+
+elif user_input == choice_2 and computer_choice == choice_1:
+    print("you win! paper beats rock")
+
+elif user_input == choice_3 and computer_choice == choice_2:
+    print("you win! scissors beats paper")
+
+elif user_input == computer_choice:
+    print("it's a tie! you both chose " + user_input)   
+
+else :
+    print("invalid input, please choose rock, paper, or scissors")
+
+
+
+print ("the game is over, the computer chose " + computer_choice)
