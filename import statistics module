@@ -1,0 +1,34 @@
+# python code 
+import statistics  # type: ignore
+import random  # type: ignore
+import string  # type: ignore
+
+
+def generate_numbers(mean:int, mode:int, median:int, stdev:float, count:int) -> list: # type: ignore
+    numbers = [23 , 34 , 45 , 56 , 67 , 78 , 89 , 90 , 12 , 34, 26 , 27 , 30 ]
+    for _ in range(count):
+        num = random.gauss(mean, stdev)
+        numbers.append(num) # type: ignore
+    return numbers
+
+def main():
+    numbers = [23, 34, 45, 56, 67, 78, 89, 90, 12, 34, 26, 27, 30]  # type: ignore
+    mean = sum(numbers) / len(numbers)  # type: ignore
+    mode = statistics.mode(numbers)  # type: ignore
+    median = statistics.median(numbers)  # type: ignore
+    stdev = statistics.stdev(numbers)  # type: ignore
+    count = 100
+    generated_numbers = generate_numbers(mean, mode, median, stdev, count)  # type: ignore
+    print("Generated Numbers:", generated_numbers)  # type: ignore
+    print(mean)  # type: ignore
+    print(mode)  # type: ignore
+    print(median)  # type: ignore
+    print(stdev)  # type: ignore
+
+
+if __name__ == "__main__":
+    main()
+
+
+
+
