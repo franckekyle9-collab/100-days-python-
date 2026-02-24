@@ -1,0 +1,32 @@
+# create a class
+
+class person:# type: ignore
+    pass
+print(person)
+
+class person:
+    def __init__(self, name, age): # type: ignore
+        self.name = name
+        self.age = age
+print(person)
+
+
+class Student(Person):# type: ignore
+    pass
+
+
+s1 = Student('Eyob', 'Yetayeh', 30, 'Finland', 'Helsinki')
+s2 = Student('Lidiya', 'Teklemariam', 28, 'Finland', 'Espoo')
+print(s1.person_info()) # type: ignore
+s1.add_skill('JavaScript') # type: ignore
+s1.add_skill('React') # type: ignore
+s1.add_skill('Python') # type: ignore
+print(s1.skills)  # type: ignore
+
+print(s2.person_info()) # type: ignore
+s2.add_skill('Organizing') # type: ignore
+s2.add_skill('Marketing') # type: ignore
+s2.add_skill('Digital Marketing') # type: ignore
+print(s2.skills) # type: ignore
+
+
