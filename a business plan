@@ -1,0 +1,38 @@
+#generate code for kyle new business paln 
+# Kyle's New Business Plan
+
+input("Welcome to Kyle's New Business Plan! Please enter your business idea: ")
+business_idea = input("What is your business idea? ")
+target_audience = input("Who is your target audience? ")
+revenue_model = input("What is your revenue model? ")
+marketing_strategy = input("What is your marketing strategy? ")
+print("thank you for trusting us with this task!")
+
+advice = "one has to look for problems to soleve, and then find a way to solve them. If you can solve a problem that people have, you can create a successful business. So, think about the problems that your target audience faces and how your business idea can solve those problems."
+print(advice)
+
+# geneeate all the problems that the world is facing right now
+
+problmes_facing = [
+    "Climate change",
+    "Renewable energy",
+    "Poverty",
+    "Mental health issues",]
+
+print ("this is a couple of the problems that the world is facing right now: ")
+for problem in problmes_facing:
+    print(f"- {problem}")
+
+# is user interested in solving any of these problems?
+interested_problem = input("Are you interested in solving any of these problems? (yes/no): ")
+if interested_problem.lower() == "yes":
+    print("Great! Let's focus on solving one of these problems.")
+else :
+    print("No worries! You can still create a successful business by solving other problems that your target audience faces. Just remember to always look for problems to solve and find a way to solve them.")
+
+# which problem is the user interested in solving?
+problem_to_solve = input("Which problem are you interested in solving? ")
+print(f"That's a great problem to solve! Now, let's think about how your business idea can solve that problem.")
+
+if problem_to_solve == "Climate change":
+    print("You can create a business that focuses on renewable energy solutions, such as solar panels or wind turbines.")
