@@ -1,0 +1,13 @@
+from scipy import stats # type: ignore                                  
+import numpy as np # type: ignore
+np.normal_dis= np.random.normal(5, 2, 1000) # mean , stsandard deviation, number of samples , # type: ignore
+np.normal_dis.mean() # type: ignore
+## mean , min, max, standard deviation, variance, skewness, kurtosis
+print("Mean: ", np.mean(np.normal_dis)) # type: ignore
+print("Min: ", np.min(np.normal_dis)) # type: ignore
+print("Max: ", np.max(np.normal_dis)) # type: ignore
+print("Standard Deviation: ", np.std(np.normal_dis)) # type: ignore
+print("Variance: ", np.var(np.normal_dis)) # type: ignore
+print("Skewness: ", stats.skew(np.normal_dis)) # type: ignore
+print("Kurtosis: ", stats.kurtosis(np.normal_dis)) # type: ignore
+
