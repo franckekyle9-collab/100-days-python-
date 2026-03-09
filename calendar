@@ -1,0 +1,26 @@
+# generate python code for calendar application
+import random    # type: ignore
+
+input("welcome to the calendar application! press enter to continue...")
+print ( "would you like to create a new calendar? (y/n)" )
+if input().lower() == "y":
+     print ( "creating a new calendar..." )
+     calendar_name = create_calendar() # type: ignore 
+elif input().lower() == "n":
+     print ( "exiting the calendar application. goodbye!" )
+def create_calendar():
+    calendar_name = input("enter the name of your calendar: ")
+    print ( f"calendar '{calendar_name}' created successfully!" )
+    return calendar_name
+
+def dispaly_cal(year_intput  , month_input): # type: ignore
+    """"""
+# display the calendar for the given year and month
+    print ( f"here is the calendar for {month_input}/{year_intput}:" )
+    print ( "Su Mo Tu We Th Fr Sa" )
+    # get the first day of the month and the number of days in the month
+first_day = random.randint(0, 6)  # 0: Sunday,
+last_day = random.randint(28, 31)  # number of days in the month
+    # print the calendar
+for i in range(first_day):
+        print ( "   " , end="" )    
